@@ -1,5 +1,6 @@
-t:("JJ";enlist " ") 0:`:numpad.csv;
-t[`press]:t[`press]-1;
-d:(2+til 8)!((0 3 6 9 12 15 19 22_ .Q.a));
-d[0]:"  "
-{d[t[`button][x]][t[`press][x]]} each til count t
+A:"do you think that maybe like, 1 in 10 people could be actually robots?";
+HEX:"0123456789abcdef";
+A:?[A in HEX;A;"0"];
+A:((ceiling (count A)%3)*3)$A;
+A:(floor ((count A)%3)) cut A;
+raze 2#'A
